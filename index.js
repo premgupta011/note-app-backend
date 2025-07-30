@@ -15,7 +15,7 @@ const ai = new GoogleGenAI(process.env.GEMINI_API_KEY);
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://noteaipowered.netlify.app",
     credentials: true,
   })
 );
