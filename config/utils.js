@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
-
+import dotenv from 'dotenv'
 const authenticate = async (req, res , next)=>{
-
+    dotenv.config()
     const token = req.cookies.token
     if(!token){
         return res.json({message: "unauthorized user"});
