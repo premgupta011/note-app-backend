@@ -157,4 +157,8 @@ export const editNote = async(req, res)=>{
         res.json({message: "Internal server error"});
     }
 
+    
+}
+export const authCheck = async (req , res)=>{
+    res.json({ success: true, user: req.user });
 }
